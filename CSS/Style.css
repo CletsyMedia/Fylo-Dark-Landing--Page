@@ -182,10 +182,10 @@
   top:18%;
   right:25%;
   transform: translate(50%, -50%);
-  font-size:1.4rem;
+  font-size:1rem;
   background-color: transparent;
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -210,13 +210,16 @@
   height: 100%;
   z-index: -1;
 }
-.modal .title{
+.modal .title p{
   font-size: 2.5rem;
 }
 #form-modal{
   display: flex;
   flex-direction: column;
   gap:1.5rem;
+  max-width:28rem;
+  width: 100%;
+  padding:0 1rem;
 }
 #form-modal input[type="text"],
 #form-modal input[type="email"],
@@ -635,6 +638,14 @@ footer .social-icons i{
 @media only screen and (max-width: 620px){
   .navHead{
     padding: 30px 20px;
+  }
+  .modal .title p{
+    font-size:1.2rem;
+    text-align-last: left;
+  }
+  .modal .fa-times{
+    top:15%;
+    right:12%;
   }
   .product .container{
     flex-direction: column;
